@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0px ;padding: 0px;}
+        .trang{
+            background-color: aqua;
+            height: 800px;
+            width: 1000px;
+            border: gray;
+        }
+        .dau{
+            background-color: antiquewhite;
+            height: 150px;
+            width: 1000px;
+            border: 1px black;
+        }
+        .giua{
+            background-color: bisque;
+            height: 50px;
+            width: 1000px;
+            position: relative;
+            
+        }
+        .giua .menu{
+            position: absolute;
+            height: 50px;
+            width: 1000px;
+            display: flex;
+        }
+        .menu li{
+            list-style: none;
+            float: left;
+            height: 50px;
+            width: 150px;
+            background-color: beige;
+            text-indent: 20px;
+            line-height: 50px;
+            position: relative;
+            
+        }
+        li a{
+            text-decoration: none;
+        }
+
+        .menu .li1 .menumenu {
+            position: absolute;
+            display: none;
+        }
+
+        .menu .li1:hover .menumenu {
+            display: block;
+        }
+
+        .menu .li1 .menumenu .li2{
+            position: relative;
+            
+        }
+
+        .menu .li1 .menumenu .li2 .menumenumenu{
+            position: absolute;
+            margin-left: 150px;
+            top: 0px;
+            display: none;
+        }
+        .menu .li1 .menumenu .li2:hover .menumenumenu{
+            display: block;
+            
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="trang">
+        <div class="dau">
+            <img src="../img/anhdau.png" alt="" height="150px" width="1000px">
+        </div>
+        <div class="giua">
+            <ul class="menu">
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.youtube.com/">Youtube</a></li>
+                <li class="li1"><a href="">Hoat dong</a>
+                 <ul class="menumenu">
+                    <li ><a href="">Bong da</a></li>
+                    <li class="li2"><a href="">Bong chuyen</a>
+                        <ul class="menumenumenu">
+                            <li><a href="">Bong chuyen nam</a></li>
+                            <li><a href="">Bong chuyen nu</a></li>
+                        </ul>
+                    </li>
+                 </ul>
+                </li>
+                <li><a href="">dinh</a></li>
+                <li><a href="">dinh</a></li>
+            </ul>
+        </div>
+        <div class="traigiua"></div>
+        <div class="phaigiua"></div>
+        <div class="duoi"></div>
+    </div>
+
+</body>
+</html>
